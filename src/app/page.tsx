@@ -6,5 +6,3 @@ export default async function Home() {
   const { upcoming } = await homePage();
   return <UpcomingResults results={upcoming.results} />;
 }
-
-export const dynamic = "force-dynamic";
