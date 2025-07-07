@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: auto !important;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica", sans-serif;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  color: white;
+}
+
+a {
+  color: #1156b7;
+}
+
+.notification a {
+  text-decoration: underline;
+}
+
+.html-content p a {
+  display: flex;
+  justify-content: center;
+}
+
+.html-content a {
+  display: flex;
+  justify-content: center;
+}
+
+.html-content p img {
+  max-width: 150px;
+}
+
+.html-content p a img {
+  max-width: 150px;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5 {
+  text-align: center;
+  background: linear-gradient(to top, #ff9000, #ffe400);
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.main-content p {
+  font-size: 1.1rem;
+  padding: 1rem;
+  color: #363636;
+}
+
+.main-content h6 {
+  font-size: 0.9rem;
+  padding: 1rem;
+  color: #2e2e2e;
+}
+
+.contactImage a {
+  display: flex;
+  justify-content: center;
+}
+
+.contactImage a img {
+  max-width: 120px !important;
+}
+
+.button-50 {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+@keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.blink {
+  text-decoration: blink;
+  animation-name: blinker;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-delay: 10s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.boxShadow {
+  box-shadow: 2px 2px hsla(0, 0%, 100%, 0.9);
+}
+.boxShadowYellow {
+  box-shadow: 2px 2px #ffd800;
+}
+
+/* styles/globals.css or your CSS module */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 350s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
